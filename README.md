@@ -1,6 +1,7 @@
 # fresh_starts
 
-A Gleam project
+A quick little Hello Multiple Worlds in Gleam w/ Gleam/OTP, since it took a second to figure a couple things out.
+
 
 ## Quick start
 
