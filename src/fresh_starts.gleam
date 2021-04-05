@@ -31,7 +31,7 @@ pub fn spawn_listener() -> Result(Sender(String), String) {
   }
 }
 
-pub fn main() {
+pub fn start_proess() {
   case spawn_listener() {
     Ok(sender) ->
       process.start(fn() {
@@ -73,14 +73,4 @@ pub fn main() {
       process.send(sender, "Hello 3.9!")
     }
   }
-}
-
-fn start_process(i) -> Pid {
-  let pid =
-    start(fn() {
-      let message = string.append("Hello world: ", int.to_string(i))
-      io.println(message)
-    })
-
-  pid
 }
