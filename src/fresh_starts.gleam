@@ -31,7 +31,7 @@ pub fn spawn_listener() -> Result(Sender(String), String) {
   }
 }
 
-pub fn start_proess() {
+pub fn start_process() {
   case spawn_listener() {
     Ok(sender) ->
       process.start(fn() {
