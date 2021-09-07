@@ -33,7 +33,7 @@ pub fn spawn_listener() -> Result(Sender(MyMessage), String) {
   process.start(fn() { listener_init(sender) })
   case process.receive(receiver, 1000) {
     Ok(new_sender) -> Ok(new_sender)
-    Error(_) -> Error("Something fucked up!")
+    Error(_) -> Error("Oh no! Something got messed up!")
   }
 }
 
